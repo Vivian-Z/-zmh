@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/lxwm.css">
+    <!--引用百度地图API-->
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script src="js/lxwm.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="S-header">
+        <div class="S-header1 clrfix">
+            <div class="S-headerm">
+                <div class="S-logo">
+                    <a href="javascript;;">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="S-language">
+                    "语言版":
+                    <span>中文 / EN</span>
+                    <img src="images/cn.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="S-header2 clrfix">
+            <div class="S-header2m">
+                <div class="S-nav">
+                    <ul class="clrfix">
+                        <li class="cur">
+                            <a href="javascript:;">
+                                首页
+                                <i class="simpline_cur S-yc"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="zjhem.html">
+                                走进惠尔明
+                                <i class="simpline_cur"></i>
+                            </a>
+                            <div class="S-z" style="display: none">
+                                <div class="S-zleft">
+                                    <h2>ABOUT US</h2>
+                                    <ul>
+                                        <li><a href="zjhem.html #section1">集团企业</a> <span> ></span></li>
+                                        <li><a href="zjhem.html #section2">企业文化</a><span> ></span></li>
+                                        <li><a href="zjhem.html #section3">研发中心</a><span> ></span></li>
+                                        <li><a href="zjhem.html #section4">战略市场</a><span> ></span></li>
+                                        <li><a href="zjhem.html #section5">集团品牌</a><span> ></span></li>
+                                    </ul>
+                                </div>
+                                <div class="S-zright">
+                                    <img src="images/abUsmenu1.jpg" alt="">
+                                    <p class="S-p1">
+                                        我们是色彩的代言人，完善的色彩设计平台让我们有了更多“色彩语言”，
+                                        我们用色彩描述这个世界创造这个世界，只要是需要色彩的地方，就有惠尔明的身影。
+                                    </p>
+                                    <p class="S-p2">
+                                        HRM IS THE AMBASSADOR FOR COLOR.OUR COMPREHENSIVE COLOR DESIGN
+                                        PLATFORM,ALLOWS US TO HAVE A WIDER VARIETY OF "COLOR LANGUAGE".
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a href="javascript:;">
+                                产品与应用
+                                <i class="simpline_cur"></i>
+                            </a>
+                            <div class="S-c" style="display: none">
+                                <div class="S-zleft">
+                                    <h2>ABOUT US</h2>
+                                    <ul>
+                                        <li><a href="">集团企业</a> <span> ></span></li>
+                                        <li><a href="">企业文化</a><span> ></span></li>
+                                        <li><a href="">研发中心</a><span> ></span></li>
+                                        <li><a href="">战略市场</a><span> ></span></li>
+                                        <li><a href="">集团品牌</a><span> ></span></li>
+                                    </ul>
+                                </div>
+                                <div class="S-zright">
+                                    <img src="images/abUsmenu1.jpg" alt="">
+                                    <p class="S-p1">
+                                        我们是色彩的代言人，完善的色彩设计平台让我们有了更多“色彩语言”，
+                                        我们用色彩描述这个世界创造这个世界，只要是需要色彩的地方，就有惠尔明的身影。
+                                    </p>
+                                    <p class="S-p2">
+                                        HRM IS THE AMBASSADOR FOR COLOR.OUR COMPREHENSIVE COLOR DESIGN
+                                        PLATFORM,ALLOWS US TO HAVE A WIDER VARIETY OF "COLOR LANGUAGE".
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a href="javascript:;">
+                                金融服务
+                                <i class="simpline_cur"></i>
+                            </a>
+                            <div class="S-j">
+                                <div class="S-zleft">
+                                    <h2>ABOUT US</h2>
+                                    <ul>
+                                        <li><a href="">集团企业</a> <span> ></span></li>
+                                        <li><a href="">企业文化</a><span> ></span></li>
+                                        <li><a href="">研发中心</a><span> ></span></li>
+                                        <li><a href="">战略市场</a><span> ></span></li>
+                                        <li><a href="">集团品牌</a><span> ></span></li>
+                                    </ul>
+                                </div>
+                                <div class="S-zright">
+                                    <img src="images/abUsmenu1.jpg" alt="">
+                                    <p class="S-p1">
+                                        我们是色彩的代言人，完善的色彩设计平台让我们有了更多“色彩语言”，
+                                        我们用色彩描述这个世界创造这个世界，只要是需要色彩的地方，就有惠尔明的身影。
+                                    </p>
+                                    <p class="S-p2">
+                                        HRM IS THE AMBASSADOR FOR COLOR.OUR COMPREHENSIVE COLOR DESIGN
+                                        PLATFORM,ALLOWS US TO HAVE A WIDER VARIETY OF "COLOR LANGUAGE".
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a href="javascript:;">
+                                投资者中心
+                                <i class="simpline_cur"></i>
+                            </a>
+                            <div class="S-t">
+                                <div class="S-zleft">
+                                    <h2>ABOUT US</h2>
+                                    <ul>
+                                        <li><a href="">集团企业</a> <span> ></span></li>
+                                        <li><a href="">企业文化</a><span> ></span></li>
+                                        <li><a href="">研发中心</a><span> ></span></li>
+                                        <li><a href="">战略市场</a><span> ></span></li>
+                                        <li><a href="">集团品牌</a><span> ></span></li>
+                                    </ul>
+                                </div>
+                                <div class="S-zright">
+                                    <img src="images/abUsmenu1.jpg" alt="">
+                                    <p class="S-p1">
+                                        我们是色彩的代言人，完善的色彩设计平台让我们有了更多“色彩语言”，
+                                        我们用色彩描述这个世界创造这个世界，只要是需要色彩的地方，就有惠尔明的身影。
+                                    </p>
+                                    <p class="S-p2">
+                                        HRM IS THE AMBASSADOR FOR COLOR.OUR COMPREHENSIVE COLOR DESIGN
+                                        PLATFORM,ALLOWS US TO HAVE A WIDER VARIETY OF "COLOR LANGUAGE".
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a href="javascript:;">
+                                联系我们
+                                <i class="simpline_cur"></i>
+                            </a>
+                            <div class="S-l">
+                                <div class="S-zleft">
+                                    <h2>ABOUT US</h2>
+                                    <ul>
+                                        <li><a href="">集团企业</a> <span> ></span></li>
+                                        <li><a href="">企业文化</a><span> ></span></li>
+                                        <li><a href="">研发中心</a><span> ></span></li>
+                                        <li><a href="">战略市场</a><span> ></span></li>
+                                        <li><a href="">集团品牌</a><span> ></span></li>
+                                    </ul>
+                                </div>
+                                <div class="S-zright">
+                                    <img src="images/abUsmenu1.jpg" alt="">
+                                    <p class="S-p1">
+                                        我们是色彩的代言人，完善的色彩设计平台让我们有了更多“色彩语言”，
+                                        我们用色彩描述这个世界创造这个世界，只要是需要色彩的地方，就有惠尔明的身影。
+                                    </p>
+                                    <p class="S-p2">
+                                        HRM IS THE AMBASSADOR FOR COLOR.OUR COMPREHENSIVE COLOR DESIGN
+                                        PLATFORM,ALLOWS US TO HAVE A WIDER VARIETY OF "COLOR LANGUAGE".
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form action="investor.asp" id="frmkey" name="frmkey" method="post">
+                    <div class="searchBox">
+                        <input type="text" class="text_search" id="key" name="key" placeholder="搜索关键字"/>
+                        <div class="search_btn" onclick="location.href='investor.asp'"></div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="banner"></div>
+    <!--联系方式-->
+    <div class="meau">
+        <a href="" class="cur">联系方式</a>
+        <span>丨</span>
+        <a href="">人才招聘</a>
+    </div>
+    <div class="main contact active">
+        <div class="section section1">
+            <div class="sec_in">
+                <div class="title">
+                    <h2>联系我们</h2>
+                    <span>CONTACT US</span>
+                    <div class="simpline"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section2">
+            <div class="con">
+                <div class="con_left">
+                    <div class="text">
+                        <h3>惠尔明集团</h3>
+                        <span>HUIERMING GROUP</span>
+                        <div class="simpline"></div>
+                     </div>
+                    <div class="text_c">
+                        <p>地址：福建省漳州市台商投资区角美镇福龙工业园</p>
+                        <p>邮编：363107</p>
+                        <p>电话：0086-596-6765514</p>
+                        <p>传真：0086-596-6765836</p>
+                        <p>邮箱：hrm5@foxmail.com</p>
+                        <div class="simpline"></div>
+                    </div>
+                    <div class="text_f">
+                        <div class="img">
+                            <img src="images/qr.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            获取更多资讯 <br>
+                            请扫描左侧二维码 <br>
+                            关注惠尔明微信公众号
+                        </div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <form action="">
+                            <h4>在线留言</h4>
+                        <label for="">
+                            <input type="text" class="fl" id="truename" name="truename" placeholder="电话">
+                            <input type="text" class="fr" id="tel" name="tel" placeholder="姓名">
+                        </label>
+                        <div class="clear"></div>
+                        <label for="">
+                            <input type="text" class="fl" id="address" name="address" placeholder="地址">
+                            <input type="text" class="fr" id="email" name="email" placeholder="Email">
+                        </label>
+                        <div class="clear"></div>
+                        <textarea name="content" id="content" cols="20" rows="3" placeholder="留言" ></textarea>
+                        <button type="submit" value="提交留言">提交留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="width:1349px;height:350px;border:#ccc solid 1px;" id="dituContent"></div>
+    </div>
+    <!--人才招聘-->
+    <!--<div class="meau">-->
+        <!--<a href="" class="cur">联系方式</a>-->
+        <!--<span>丨</span>-->
+        <!--<a href="">人才招聘</a>-->
+    <!--</div>-->
+    <div class="main jobs active">
+        <div class="section section1">
+            <div class="sec_in">
+                <div class="title">
+                    <h2>人才招聘</h2>
+                    <span>RECRUITMENT</span>
+                    <div class="simpline"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="section section2">
+            <div class="sec_in">
+                <div class="recritment">
+                    <div class="side_meau">
+                        <ul>
+                            <li class="cur">
+                                <a href="">业务经理</a>
+                            </li>
+                            <li>
+                                <a href="">货车司机</a>
+                            </li>
+                            <li>
+                                <a href="">调色</a>
+                            </li>
+                            <li>
+                                <a href="">储蓄干部</a>
+                            </li>
+                            <li>
+                                <a href="">销售经理</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sd_main">
+                        <div class="side_con">
+                            <div class="side_title">
+                                招聘职位：业务经理
+                            </div>
+                            <div class="side_main">
+                                <div class="side_main_t">
+                                    <h3>基本要求</h3>
+                                    <p>招聘人数：2人</p>
+                                    <p>性别要求：不限</p>
+                                    <p>工作经验：三年工作经验以上</p>
+                                    <p>工作地点：厦门市海沧区</p>
+                                </div>
+                                <div class="side_main_b">
+                                    <h3>岗位职责</h3>
+                                    <p>1、年龄26-35岁，大专及以上学历，三年以上市场营销工作经验；</p>
+                                    <p>2、具备良好的市场开拓能力、沟通协调能力、团队协作精神；</p>
+                                    <p>3、思维活跃，积极进取，能吃苦耐劳、具有很强的执行力；</p>
+                                    <p>4、熟悉化工溶剂市场，对工业涂料感兴趣；</p>
+                                    <p>上班公司：惠尔明集团子公司（厦门惠仕特贸易有限公司）</p>
+                                    <p>上班地址：厦门海沧区海沧阳光南路6号环信达化工内</p>
+                                    <p>招聘联系电话：0592-6229725</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side_con">
+                            <div class="side_title">
+                                招聘职位：货车司机
+                            </div>
+                            <div class="side_main">
+                                <div class="side_main_t">
+                                    <h3>基本要求</h3>
+                                    <p>招聘人数：1人</p>
+                                    <p>性别要求：男</p>
+                                    <p>工作经验：五年工作经验以上</p>
+                                    <p>工作地点：厦门市海沧区</p>
+                                </div>
+                                <div class="side_main_b">
+                                    <h3>岗位职责</h3>
+                                    <p>1、自觉遵守公司各项规章制度，服从公司领导的调配，主动协助货物上下车装卸，保证所接送的货物能安全、及时、准</p>
+                                    <p>确的到达客户方。</p>
+                                    <p>2、定期汇报车辆的运行情况，保证车辆在安全的状态下行使，并记录车辆的行使路线及行程。</p>
+                                    <p>3、车辆维修、保养费用必须预先申请，经批准后，到指定维修厂维修，保持良好的车状及车辆的清洁。</p>
+                                    <p>4、负责车辆各种税费的缴纳、车辆季审、年审以及车辆变更业务的办理。</p>
+                                    <p>5、本岗位需持有道路运输危险货物从业资格证书。</p>
+                                </div>
+                                <div class="side_main_b">
+                                    <h3>任职资格</h3>
+                                    <p>1、男性，已婚，年龄30岁以上。</p>
+                                    <p>2、持C1（含）以上驾照、危货运输从业资格（如无此证者须有两年以上运输上岗证，并愿意立即参加培训并取得），至</p>
+                                    <p>少2年以上道路运输资质，最好有危化品道路运输许可证。</p>
+                                    <p>3、实际驾龄5年以上，对厦门、漳州地区路线熟悉者优先考虑。</p>
+                                    <p>4、有时需帮忙卸货，能吃苦耐劳、责任心强，服从安排管理。</p>
+                                    <p>5、本岗位需持有道路运输危险货物从业资格证书。</p>
+                                    <p>6、上班地点：海沧区海沧阳光南路6号 环信达化工内 此岗位联系电话：18059295061</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side_con">
+                            <div class="side_title">
+                                招聘职位：调色
+                            </div>
+                            <div class="side_main">
+                                <div class="side_main_t">
+                                    <h3>基本要求</h3>
+                                    <p>招聘人数：1人</p>
+                                    <p>性别要求：男</p>
+                                    <p>工作经验：三年工作经验以上</p>
+                                    <p>工作地点：厦门市海沧区</p>
+                                </div>
+                                <div class="side_main_b">
+                                    <h3>岗位职责</h3>
+                                    <p>1、按照客户提供的需求（样油、样板）和研发工程师开立的”打样命令单“要求进行调色、样板制作。</p>
+                                    <p> 2、调色产品工艺及配方的制定与管理、生产跟踪指导、异常处</p>
+                                    <p>3、协助研发工程师进行产品设计开发、实验、客诉处理、售后服务等。</p>
+                                    <p>4、部分调色产品的生产。</p>
+                                </div>
+                                <div class="side_main_b">
+                                    <h3>任职资格</h3>
+                                    <p>1、高中（含）以上学历，三年以上油性涂料（塑胶漆、烤漆等）调色打样工作经验。</p>
+                                    <p>2、技能娴熟，能按要求完成调色打样、客服等工作。</p>
+                                    <p>3、为人诚恳务实、积极主动，团队意识、服务意识好、责任心强。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side_con">
+                            <div class="side_title">
+                                招聘职位：储备干部
+                            </div>
+                            <div class="side_main">
+                                <div class="side_main_t">
+                                    <h3>基本要求</h3>
+                                    <p>招聘人数：若干人</p>
+                                    <p>性别要求：男</p>
+                                    <p>工作经验：应届生</p>
+                                    <p>工作地点：漳州市</p>
+                                </div>
+                                <div class="side_main_b">
+                                    <h3>岗位职责</h3>
+                                    <p>1、20-30岁，本科学历（男生优先考虑）；</p>
+                                    <p> 2、应用化学/化工类相关专业毕业生</p>
+                                    <p> 3、具有服务意识、吃苦耐劳精神，身体健康！</p>
+                                    <p> 4、能适应公司文化</p>
+                                    <p>5、薪资待遇2500-3000元/月</p>
+                                    <p>6、带薪培训，职业规划：储备干部?研发助理?研发技术员?助理工程师?工程师</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side_con">
+                            <div class="side_title">
+                                招聘职位：销售经理
+                            </div>
+                            <div class="side_main">
+                                <div class="side_main_t">
+                                    <h3>基本要求</h3>
+                                    <p>招聘人数：3人</p>
+                                    <p>性别要求：不限</p>
+                                    <p>工作经验：三年工作经验以上</p>
+                                    <p>工作地点：福州市 泉州市</p>
+                                </div>
+                                <div class="side_main_b">
+                                    <h3>岗位职责</h3>
+                                    <p>1、所负责区域工业产品涂料市场的拓展，客户的开发。</p>
+                                    <p>2、所负责区域 客户关系的建立与维护，客户需求的有效对接、沟通协调与持续跟进落实。</p>
+                                    <p>3、所负责区域各项销售目标的达成。</p>
+                                </div>
+                                <div class="side_main_b">
+                                    <h3>任职资格</h3>
+                                    <p>1、全日制大专（含）以上学历，三年以上工业产品涂料或相关行业销售经验（针对工厂进行销售）。</p>
+                                    <p>2、对工业产品涂料和市场有一定的了解，在福州、泉州市场有客户资源、人脉关系者优先；</p>
+                                    <p>3、良好的语言表达、客户开发、沟通协调能力。</p>
+                                    <p>4、自带小车优先考虑。</p>
+                                    <p>5、有意者直接来漳州角美公司面试，经过培训学习派至福州、泉州等地进行业务拓展，福州、泉州当地人优先考虑。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(115.742828,41.405219);//定义一个中心点坐标
+        map.centerAndZoom(point,8);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+
+    initMap();//创建和初始化地图
+</script>
+</html>
